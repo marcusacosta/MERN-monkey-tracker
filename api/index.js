@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const Transaction = require('./models/transactions.js');
+const Transaction = require('./models/Transaction.js');
 
 const app = express();
 

@@ -1,12 +1,12 @@
 const { Schema, model } = require("mongoose");
 
-const TransactionsSchema = new Schema({
+const TransactionSchema = new Schema({
   name: { type: String, required: true },
   price: { type: Number, required: true },
   description: { type: String, required: true },
   datetime: { type: Date, required: true },
 });
 
-const TransactionsModel = model('Transaction', TransactionsSchema);
+const TransactionModel = model('Transaction', TransactionSchema);
 
-module.exports = TransactionsModel;
+module.exports = TransactionModel;
